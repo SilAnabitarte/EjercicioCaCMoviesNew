@@ -1,0 +1,395 @@
+header{
+    background-color: black;
+    position: relative;
+        color:darkgrey;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    color:darkgray;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+    color:ghostwhite   
+    font-family; 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+main{
+       background-size: cover;
+       background-color:black;
+}
+body{
+    background-color: black;
+}
+    
+    nav{
+        background-color: black;
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:40px;
+        margin-right: 40px;
+        padding: 1rem 0;
+        display: flex;
+        .logoNav{
+            text-decoration: none; 
+        }
+        .listaNav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            .listaItem{
+                margin-right:40px;
+                .linkNav{
+                    text-decoration: none;
+                }
+                .iniciarSesion{
+                    text-decoration: none;                 
+                    background-color: cadetblue;
+                    align-items: center;
+                    margin-left:20px;
+                    margin-right: 20px;
+                    max-height: 30px;
+                    padding: 1rem;
+                    display: flex;
+                    border-radius: 5px;
+                }
+                
+                
+            }
+        }
+    }
+
+
+.principal{
+    background: url(Grafica/Peliculas/Arrival_principal.jpg);
+    background-size: cover;
+    padding: var(#000000);
+    background-position: center; 
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: azure;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    .Registro{
+        text-decoration: none;                 
+        background-color: black;
+        display: inline;
+        align-items: center;
+        margin-left:20px;
+        margin-right: 20px;
+        max-height: 30px;
+        padding: 1rem;
+        display: flex;
+        border-radius: 5px;
+    }
+}
+    .buscador{
+        color:antiquewhite;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        .buscadorPelis{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            .inputbuscar{
+                border: 2px solid white;
+                border-radius: 25px;
+                color: #000000;
+                font-size: 1rem;
+                height: 30px;
+                margin: 20px 0px;
+                outline: none;
+                padding: 0px 20px;
+                width: 250px;
+            }
+            
+            .botonBuscar{
+                text-decoration: none;                 
+                background-color: cadetblue;
+                color:antiquewhite;
+                justify-content: center;
+                margin-left:20px;
+                margin-right: 20px;
+                height: 35px;
+                margin: 20px;
+                padding: 0,5rem;
+                display: flex;
+                border-radius: 25px;
+                border-color: antiquewhite;
+                width: 100px;
+
+            }
+        
+        }
+    }
+    .tituloSection{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-justify: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tendenciasContainer{
+        /*width:80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+        display: flex;*/
+
+        width: 80%;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+    }
+    .tendencias{
+        color:antiquewhite;
+        justify-content: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+     
+    .peliculas{
+        justify-content: center;
+        gap:50px;
+        height: 300px;
+        width: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        .imagenTendencias{
+            display: inline-block;
+            
+        }
+
+        .tituloPeli{
+                z-index: 2;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                max-width: 20rem;
+                width: 100%;
+                transform: translateY(-50%) translateX(-50%);
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    opacity: 0;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 0.1rem;
+                    transition: opacity 0.5s ease-in-out;
+
+                }
+            }
+           &:hover{
+               box-shadow: 0 0 30px blanchedalmond;
+               transform: scale(0.9);
+            } 
+        
+            /*&:hover .tituloPeli{
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(20px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover h4 {
+                width: 100%;
+                padding: 0.5rem;
+                opacity: 1;
+            }*/
+
+        }
+    
+    .boton{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    .BotonAnt{
+        text-decoration: none;                 
+        background-color: cadetblue;
+        align-items: center;
+        margin-top:20px;
+        margin-right: 20px;
+        height: 30px;
+        padding: 1rem;
+        display: flex;
+        border-radius: 5px;
+
+    }
+    .BotonSig{
+        text-decoration: none;                 
+        background-color: cadetblue;
+        align-items: center;
+        margin-top:20px;
+        margin-right: 20px;
+        height: 30px;
+        padding: 1rem;
+        display: flex;
+        border-radius: 5px;
+
+    }
+    /*.series{
+        color:antiquewhite;
+        justify-content: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;*/
+    }
+    #series{
+        /*width: 80%;
+
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem auto;*/
+        position: relative;
+        scroll-snap-align: center;
+        gap: 1.5rem;
+        height: 320px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+
+        
+    
+
+        /*width: 80%;
+        gap: 1.5rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+
+        height: 300px;
+        width: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: auto;
+        display: flex;
+    
+        .imagenTendencias{
+            display: inline-block;
+            
+        }*/
+    }    
+
+    .login {
+        background-size: cover;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: url(Grafica/Peliculas/Arrival_principal.jpg);
+        background-size: cover;
+        padding: var(#000000);
+        background-position: center; 
+        .divlogin{
+            background-color: rgb(66, 63, 63);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-position: center; 
+            height: 70vh;
+            width: 50vh;
+    
+    
+            /*.linkIniciar{
+                text-decoration: none;
+
+            }*/
+            .iniciar{
+                /*text-decoration: none;
+                background-color: cadetblue;
+                align-items: center;
+                margin-left: 20px;
+                margin-right: 20px;
+                max-height: 30px;
+                padding: 20px 0px;
+                border-radius: 5px;
+                font-size: 1rem;
+                display: flex;*/
+                position: relative;
+                justify-content: space-between;
+                text-decoration: none;                 
+                background-color: cadetblue;
+                align-content: center;
+                /*align-items: center;*/
+                margin-left:20px;
+                margin-right: 20px;
+                max-height: 30px;
+                padding: 1rem;
+                display: flex;
+                border-radius: 5px;
+            }
+        }
+        .inputdatos{
+            background-color: rgb(66, 63, 63);
+            border: 4px solid #200763;
+            border-radius: 25px;
+            font-size: 1rem;
+            height: 30px;
+            margin: 20px;
+            outline: none;
+            padding: 0px 20px;
+            width: 30vh;
+            
+        }
+    
+        Registrarse{
+                text-decoration: none;                 
+                /*background-color: black;*/
+                color: #000000;
+                align-items: center;
+                margin: 20px;
+                height: 30px;
+                padding: 20px;
+                display: flex;
+                border-radius: 5px;
+        
+        }
+    
+    }
+
+
+footer{
+    background-color: black;
+    color: azure;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
